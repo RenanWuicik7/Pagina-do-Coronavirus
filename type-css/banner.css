@@ -1,0 +1,94 @@
+.principal {
+    text-align: center;
+}
+
+.banner-home__main {
+    width: 100%;
+}
+
+.home-title {
+    font-size: 51px;
+    font-family: var(--pacifico);
+    padding: 0 0 0.5em;
+    color: var(--vermelho);
+}
+
+b {
+    font-weight: bold;
+}
+
+.home-text_1 {
+    font-family: var(--roboto);
+    color: var(--cinza-escurinho);
+    font-size: 24px;
+}
+
+/* Seção de Cards */
+.cards {
+    margin: 4.6em 5em 8em;
+}
+
+.card-divisao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.card-article {
+    border: 2px solid var(--cinza-clarinho);
+    font-family: var(--roboto);
+    box-sizing: border-box;
+    margin: 1.5em 4.4em 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__imagem {
+    max-width: 100%;
+    width: 100%;
+}
+
+.card__titulo {
+    font-size: 23px;
+    padding: 1rem 1.4em 0
+}
+
+.card__texto {
+    font-size: 19px;
+    padding: 1rem 1.4em 0;
+    margin: auto;
+}
+
+.card__ancora {
+    text-decoration: none;
+    color: var(--branco);
+    background: var(--vermelho);
+    border-radius: 5px;
+    padding: 0.5em 0.3em;
+    margin: 1em 1em 1em 0;
+    margin-right: calc(100% - 8.5em);
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {        
+    .card__ancora {
+        font-size: 18px;
+        border: 1px solid var(--vermelho);
+        background-color: var(--vermelho);
+        color: var(--branco);
+        text-decoration: none;
+        padding: 0.5em 0.3em;
+        margin-top: 1em;
+        border-radius: 5px;
+    }
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+}
+  

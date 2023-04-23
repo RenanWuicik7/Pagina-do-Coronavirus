@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Baskerville:wght@400;700&family=Noto+Serif+Lao:wght@600&family=Open+Sans&family=Pacifico&family=Red+Hat+Display:ital@1&family=Roboto:wght@300;400;700&display=swap');
+@import url(cabecalho.css);
+@import url(banner.css);
+@import url(rodape.css);
+@import url(general-content.css);
+
+:root {
+    /* Fonts */
+    --noto-serif: 'Noto Serif Lao', serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --pacifico: 'Pacifico', cursive;
+    --roboto: 'Roboto', sans-serif;
+    --libre-baskerville:'Libre Baskerville', serif;
+    --kanit: 'Kanit', sans-serif;
+    --red-hat-display: 'Red Hat Display', sans-serif;
+
+    /* Colors */
+    --preto: #000000;
+    --branco: #ffffff;
+    --vermelho: #8D0606;
+    --cinza-escurinho: #8C8888;
+    --cinza-clarinho: #C4C4C4;
+    --fundo-menu: #fffae0ea;
+}

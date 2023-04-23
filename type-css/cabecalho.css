@@ -1,0 +1,88 @@
+header {
+    background-color: antiquewhite;
+}
+
+.menu-navegacao {
+    padding: 0 0.5rem;
+}
+
+.menu-navegacao__container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-imagem__logo {
+    width: 4em;
+}
+
+.navegacao-texto__main {
+    font-family: var(--open-sans);
+    padding: 0 0.5em;
+}
+
+.menu-navegacao_hamburguer {
+    width: 35px;
+    height: 24px;
+    background: url(../assets/Menu.png) no-repeat;
+    background-position: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-navegacao {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    background-color: var(--fundo-menu);
+    top: 67px;
+    padding: 0.5em;
+    width: 20vw;
+}
+
+.navegacao-item {
+    list-style: none;
+    padding: 0 1em 0.5em;
+    font-family: var(--open-sans);
+    text-align: left;
+}
+
+.navegacao-link {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.menu-navegacao__input:checked ~ .menu-navegacao__label > .menu-navegacao_hamburguer {
+    background-image: url(../assets/Menu\ Aberto.png);
+    padding: 0.5em;
+    background-color: #00ffff5d;
+}
+
+.menu-navegacao__input:checked ~ .lista-navegacao {
+    display: inline-block;
+}
+
+.menu-navegacao__input {
+    all: unset;
+}
+
+.paginas-extras {
+    font-family: var(--pacifico);
+}
+
+.extras-link {
+    padding: 0 1.5rem;
+    font-size: 24px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.extras-link:hover {
+    text-decoration: underline;
+    color: lightslategrey;
+}

@@ -1,0 +1,557 @@
+/* Content of About Corona Page */
+.sumario {
+    margin: 1rem;
+    margin-bottom: 3rem;
+    font-family: 'Inter', sans-serif;
+    background-color: floralwhite;
+    padding: 3rem 5rem;
+}
+
+.sumario-titulo {
+    font-size: 45px;
+    font-weight: 700;
+    padding: .4rem;
+    color: darkolivegreen;
+}
+
+.sumario-topico {
+    list-style-type: upper-roman;
+    text-align: left;
+    margin: .4rem;
+}
+
+.sumario-topico:last-child {
+    margin-bottom: .5rem;
+}
+
+.sumario-topico > a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--cinza-escurinho);
+}
+
+.sumario-topico > a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sumario-topico > ul > li {
+    list-style: circle;
+    text-align: left;
+    margin: .3rem;
+    margin-left: 3rem;
+    font-size: 18px;
+}
+
+.sumario-topico > ul > li > a {
+    transition: .5s;
+    text-decoration: none;
+    color: darkgray;
+}
+
+.sumario-topico > ul > li > a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.texto-principal {
+    font-family: var(--libre-baskerville);
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    padding: 1em;
+    margin: 0 5em;
+}
+
+.texto-enunciado {
+    font-size: 28px;
+    font-family: var(--libre-baskerville);
+    font-weight: 400;
+    margin: .5em;
+}
+
+.video-principal {
+    transition: 1s;
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.8);
+    margin: 2em;
+}
+
+.video-principal:hover {
+    opacity: 0.6;
+    transition: 1s;
+}
+
+/* CSS dos card´s da página de about corona
+.marcador {
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.container-conteudo {
+    position: absolute;
+    background-color: #a7f0c8;
+    border: 3px double #005f3b;
+    border-radius: 15px;
+    padding: .7rem .1rem;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    width: 40%;
+    text-align: center;
+}
+
+.i-0-cont,
+.i-1-cont,
+.i-2-cont {
+    display: none;
+    width: 20%;
+}
+
+.i-0-cont {
+    top: 60rem;
+    left: 30rem;
+}
+
+.i-1-cont {
+    top: 116%;
+    left: 49%;
+}
+
+.i-2-cont {
+    top: 126%;
+    left: 45%;
+}
+ 
+.i-0-cont::before, 
+.i-1-cont::before, 
+.i-2-cont::before {
+    content: '';
+    position: absolute;
+    top: 78%;
+    left: -6px;
+    transform: translateY(-50%);
+    transform: translateX(310%);
+    transform: rotate(13deg);
+    border-width: 12px 0px 12px 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #017c4d;
+}
+
+.i-1-cont::before {
+    top: 87%;
+    left: -5.7px;
+    transform: rotate(10deg);
+}
+
+.clicked {
+    display: block;
+}*/
+
+.container-conteudo > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.container-conteudo > a:active {
+    text-decoration: underline;
+    color: purple;
+}
+
+.informacao1 {
+    text-decoration: underline;
+    cursor: help;
+    color: #38e494;
+}
+
+.extra-content:hover {
+    transition: 1s;
+    color: #1db66f;
+    font-size: 37px;
+}
+
+.segunda-parte {
+    margin: 5em;
+}
+
+.subtitulo-artigo {
+    font-family: var(--pacifico);
+    color: var(--vermelho);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.subconteudo-artigo {
+    font-family: var(--libre-baskerville);
+    font-weight: 400;
+    font-size: 37px;
+    padding: 1em;
+    text-align: center;
+}
+
+.remenber-of-biblioteca, 
+.ancora-remenber, 
+.introducao-site {
+    text-decoration: none;
+    font-family: var(--roboto);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--cinza-escurinho);
+    margin: 0 7.5em 1.5em;
+}
+
+.ancora-remenber, 
+.introducao-site {
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    color: #636060;
+}
+
+.ancora-remenber:hover, 
+.introducao-site:hover {
+    transition: .5s;
+    text-decoration: underline;
+    color: #4b4848;
+}
+
+/* About the Corona */
+.secundario-content {
+    color: var(--preto);
+    font-family: var(--libre-baskerville);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 1em;
+}
+
+/* Time Line Style */
+.introducao-texto {
+    font-family: var(--kanit);
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px;
+    margin: 1em 1em .7rem;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-destaque {
+    font-family: var(--roboto);
+    color: var(--branco);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--vermelho);
+    padding: .3em;
+    margin: 1rem 0 .4rem;
+    border-radius: 5px;
+    width: 15vw;
+}
+
+.texto-conteudo2019 {
+    font-family: var(--libre-baskerville);
+    font-weight: 400;
+    font-size: 38px;
+    text-align: center;
+    margin: .3em;
+}
+
+.texto-conteudo, 
+.texto-conteudo-null {
+    font-family: var(--libre-baskerville);
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: .3rem 3em;
+}
+
+.texto-conteudo-null {
+    margin: 1em 0;
+}
+
+/* Scails style */
+.titulo-destaque, 
+.texto-principal-fakes {
+    font-family: var(--pacifico);
+    font-size: 47px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--vermelho);
+    margin: 1em 2em .8rem;
+}
+
+.lista-item {
+    font-family: var(--roboto);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: disc;
+  }
+
+.aside-escalas {
+    margin: .5rem;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--red-hat-display);
+}
+
+.secundario {
+    padding: 1em 2rem 1em;
+}
+
+/* Fakes Style */
+.texto-inicial-fakes, 
+.texto-secundario-fakes, 
+.container-terciario-texto, 
+.container4_texto, 
+.texto-terciario {
+    font-family: var(--libre-baskerville);
+    font-size: 33px;
+    font-weight: 400;
+    text-align: center;
+    margin: 1em 5.5em;
+}
+
+.subtitulo-destaque-fakes, 
+.subtitulo-texto-destaque, 
+.titulo-container-4 {
+    font-family: var(--pacifico);
+    font-size: 37px;
+    font-weight: 400;
+    text-align: center;
+    margin: 1em 1rem 0.5rem;
+    color: var(--vermelho);
+}
+
+.lista-container {
+    line-height: 35px;
+}
+
+.lista-container-item {
+    list-style-type: decimal;
+    text-align: center;
+    font-family: var(--kanit);
+    font-weight: 400;
+    font-size: 32px;
+    margin: 1em 7.7em 0;
+}
+
+.container-terciario {
+    line-height: 25px;
+}
+
+.texto-secundario-fakes {
+    font-size: 27px;
+    margin: 1em 4.5em;
+}
+
+.ancora-container-fakes {
+    transition: .5s;
+    text-decoration: none;
+    color: #00332c;
+    font-weight: 700;
+}
+
+.ancora-container-fakes:hover {
+    transition: .5s;
+    text-decoration: underline;
+    color: #005961;
+}
+
+.container-terciario-texto, 
+.container4_texto, 
+.texto-terciario {
+    margin: 1em 8.5em;
+    font-size: 23px;
+}
+
+.container-terciario_lista-item {
+    list-style-type: decimal;
+    text-align: center;
+    font-family: var(--libre-baskerville);
+    font-weight: 400;
+    font-size: 22px;
+    margin: 1em 10em 0;
+}
+
+.container_terciario-dois_lista {
+    line-height: 20px;
+}
+
+i {
+    font-style: italic;
+}
+
+.ancora-secundario {
+    text-decoration: none;
+    color: var(--preto);
+    text-decoration: none;
+    font-family: var(--roboto);
+    text-align: center;
+    font-weight: 400;
+    color: var(--cinza-escurinho);
+}
+
+.negrito-texto {
+    font-family: var(--libre-baskerville);
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin: 1em 7.7rem 2.7em;
+}
+
+.secundario__texto, .conteudo__extra, .lista-texto-extra, .content-text {
+    font-family: var(--libre-baskerville);
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    margin: 1rem 4rem;
+}
+
+.conteudo__extra {
+    font-family: var(--pacifico);
+    color: #510000;
+    font-size: 40px;
+    padding: 1rem 0;
+}
+
+.ancora-secundario:hover {
+    transition: .5s;
+    text-decoration: underline;
+    color: #4b4848;
+}
+
+.lista-ordenada-secundario__item {
+    font-family: var(--libre-baskerville);
+    font-size: 32px;
+    font-weight: 400;
+    margin: 1rem 6.5rem;
+}
+
+.lista-texto-extra {
+    margin: 4rem 0 1rem;
+}
+
+.lista-funcoes, .content-text {
+    margin: 0 5rem;
+    line-height: 40px;
+}
+
+.content-text {
+    font-family: var(--libre-baskerville);
+    margin: 2rem 5rem;
+}
+
+/*Fitoterápicos Styles */
+#funcoesGerais, 
+#funcoesNervosas, 
+#funcoesRespiratorias {
+    color: #720000;
+}
+
+.lista-item {
+    text-align: left;
+}
+
+.lista-scal {
+    text-align: center;
+}
+
+
+/* Bibliografia */
+.principal-2 {
+    background-color: white;
+}
+
+.banner-bibliografia {
+    margin-top: -20px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1600px) {
+    .banner-bibliografia {
+        margin-top: -40px;
+    }
+}
+
+.principal-titulo {
+    font-family: var(--pacifico);
+    font-weight: 400;
+    font-size: 61px;
+    text-align: center;
+    color: var(--vermelho);
+    background-color: white;
+    margin: 2rem;
+}
+
+.referencias {
+    text-align: center;
+    margin: 0 7rem;
+}
+
+.titulos-referencias {
+    font-family: var(--pacifico);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: var(--vermelho);
+    margin: 2rem auto 1rem;
+}
+
+.lista-referencia-item {
+    transition: .3s;
+    font-family: var(--roboto);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding: .5rem;
+    list-style: none;
+}
+
+.ancora-referencias {
+    transition: .1ms;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.lista-referencia-item:hover, .item-redirecionamento:hover, .item-redirecionamento > a:hover {
+    transition: .1ms;
+    font-weight: 400;
+    color: #01695b;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.texto-final, .texto-final-auxilio, .item-redirecionamento {
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: var(--preto);
+    margin: 2.5rem 4.5rem 1rem;
+}
+
+.item-redirecionamento, .item-redirecionamento > a {
+    text-decoration: none;
+    transition: .5s;
+    color: #00332c;
+}
+
+.item-redirecionamento:hover, .item-redirecionamento > a:hover {
+    transition: .5s;
+}
