@@ -86,3 +86,22 @@ header {
     text-decoration: underline;
     color: lightslategrey;
 }
+
+@media screen and (max-width: 500px) {
+    .paginas-extras {
+        display: flex;
+    }
+
+    .extras-link {
+        font-size: 15px;
+        padding: 0.3rem;
+    }
+
+    .menu-imagem__logo {
+        width: 50%;
+    }
+
+    .menu-navegacao__input:checked ~ .lista-navegacao {
+        width: 50%;
+    }
+}

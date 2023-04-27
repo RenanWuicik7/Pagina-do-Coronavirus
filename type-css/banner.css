@@ -86,9 +86,56 @@ b {
     }
 }
   
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .cards {
-      grid-template-columns: 1fr;
+      margin: .5rem;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-divisao {
+        display: block;
+        margin: .5rem 0;
+        padding: 0;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .card-article {
+        margin: 0 -2rem 2rem;
+        text-align: center;
+    }
+
+    .card__imagem {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card__titulo {
+        font-size: 20px;
+        padding: .5rem 0;
+        margin: 0;
+    }
+
+    .card__texto {
+        font-size: 15px;
+        margin: 0;
+        padding: .3rem;
+    }
+
+    .card__ancora {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .home-title {
+        font-size: 25px;
+    }
+
+    .home-text_1 {
+        font-size: 16px;
+        margin: 0 .5rem;
     }
 }
   
