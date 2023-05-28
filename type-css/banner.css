@@ -60,6 +60,7 @@ b {
 }
 
 .card__ancora {
+    transition: .2s;
     text-decoration: none;
     color: var(--branco);
     background: var(--vermelho);
@@ -68,6 +69,14 @@ b {
     margin: 1em 1em 1em 0;
     margin-right: calc(100% - 8.5em);
     align-self: flex-end;
+}
+
+.card__ancora:hover {
+    transition: .2s;
+    text-decoration: underline;
+    color: #e2e2e2;
+    background-color: #c50000de;
+    padding: .7rem .5rem;
 }
 
 @media screen and (min-width: 1024px){

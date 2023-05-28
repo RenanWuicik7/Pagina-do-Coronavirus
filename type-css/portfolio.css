@@ -209,7 +209,7 @@ footer>section>.port-botao {
 }
 
 /* RESPONSIVIDADE ABOUT ME PAGE */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .titulo-portfolio {
         font-size: 30px;
     }
@@ -302,5 +302,22 @@ footer>section>.port-botao {
         transition: 0s;
         padding: .2rem .4rem;
         background-color: #9dfce76e;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1283px) {
+    .container-port,
+    .sec-container-port,
+    .third-cont-flex {
+        align-items: center;
+    }
+
+    .banner-1-port--desktop,
+    .img-sec-cont-port--desktop,
+    .th-img-flx--desktop {
+        height: 50%;
+        width: 30%;
+        margin: 0;
+        padding: 0;
     }
 }

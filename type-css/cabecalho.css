@@ -45,6 +45,12 @@ header {
     width: 20vw;
 }
 
+.navegacao-link:hover {
+    color: #777;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .navegacao-item {
     list-style: none;
     padding: 0 1em 0.5em;
@@ -57,24 +63,14 @@ header {
     color: var(--preto);
 }
 
-@media screen and (min-width: 500px) {
-    .menu-navegacao__input:checked~
-    .menu-navegacao__label>
-    .menu-navegacao_hamburguer {
-        background-image: url(../assets/Menu\ Aberto.png);
-        padding: 0.5em;
-        background-color: #00ffff28;
-        margin-bottom: 0;
-    }
+.menu-navegacao__input:checked~.menu-navegacao__label>.menu-navegacao_hamburguer {
+    background-image: url(../assets/Menu\ Aberto.png);
 }
 
-@media screen and (max-width: 500px) {
-    .menu-navegacao__input:checked~
-    .menu-navegacao__label {
-        padding: .5rem;
-        background-color: #00ffff28;
-        margin-bottom: 0;
-    }
+.menu-navegacao__input:checked~.menu-navegacao__label {
+    padding: .5rem;
+    background-color: #00ffff3f;
+    margin-bottom: 0;
 }
 
 
@@ -124,5 +120,23 @@ header {
 
     .menu-navegacao__input:checked~.lista-navegacao {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lista-navegacao {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 707px) {
+    .lista-navegacao {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .lista-navegacao {
+        width: 30%;
     }
 }

@@ -287,7 +287,51 @@
     }
 }
 
-/* About the Corona */
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 1024px) {
+    .sumario-titulo {
+        font-size: 33px;
+    }
+
+    .sumario-topico a {
+        font-size: 25px;
+    }
+
+    .texto-principal,
+    .subconteudo-artigo {
+        font-size: 25px;
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .txt-mrg {
+        margin-top: 0;
+    }
+
+    .video-principal {
+        width: 100%;
+    }
+
+    .segunda-parte {
+        margin: 1rem;
+    }
+
+
+    /* RESPONSIVIDADE TABLET DO REMENBER OF BIBLIOTECA */
+    .remenber-of-biblioteca {
+        font-size: 24px;
+        padding: 0;
+        margin: .5rem 1.5rem 1rem;
+    }
+
+    .ancora-remenber {
+        font-size: 26px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* About the Sars */
 .secundario-content {
     color: var(--preto);
     font-family: var(--libre-baskerville);
@@ -300,6 +344,16 @@
 @media screen and (max-width: 500px) {
     .secundario-content {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    .subtitulo-artigo {
+        font-size: 33px;
+    }
+
+    .secundario-content {
+        font-size: 25px;
     }
 }
 
@@ -354,6 +408,20 @@
     margin: 1em 0;
 }
 
+
+.navegacao_link--ativo {
+    color: #777;
+    font-weight: bold;
+    /* border: 3px double #777;
+    padding: 0 3rem; */
+}
+
+.navegacao_link--ativo::before {
+    content: url(../assets/ative.png);
+    margin-right: .6rem;
+    margin-left: -1.8rem;
+}
+
 /* RESPONSIVIDADE TIME LINE */
 @media screen and (max-width: 500px) {
     .introducao-texto,
@@ -378,6 +446,35 @@
     .texto-destaque {
         font-size: 16px;
         margin: .3rem 1rem;
+    }
+}
+
+/* RESPONSIVIDADE TABLET TIME LINE */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .introducao-texto {
+        font-size: 23px;
+    }
+
+    .introducao-site {
+        font-size: 23px;
+        color: #777;
+        text-decoration: underline;
+        transition: 0s;
+    }
+
+    .texto-destaque {
+        font-size: 27px;
+        width: 30%;
+        padding: 1rem;
+    }
+
+
+    .texto-conteudo2019,
+    .texto-conteudo,
+    .texto-conteudo-null {
+        font-size: 25px;
+        padding: 0;
+        margin: 1rem;
     }
 }
 
@@ -433,6 +530,18 @@ ul {
 
     .aside-escalas {
         font-size: 12px;
+    }
+}
+
+/* RESPONSIVIDADE TABLET SCAILS */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .titulo-destaque {
+        font-size: 30px;
+    }
+
+    .secundario li {
+        font-size: 24px;
+        text-align: left;
     }
 }
 
@@ -566,6 +675,7 @@ i {
 }
 
 .lista-texto-extra {
+    font-weight: bold;
     margin: 4rem 0 1rem;
 }
 
@@ -577,6 +687,7 @@ i {
 .content-text {
     font-family: var(--libre-baskerville);
     margin: 2rem 5rem;
+    font-weight: bold;
 }
 
 /* RESPONSIVIDADE FAKES PAGE */
@@ -607,6 +718,61 @@ i {
         font-size: 17px;
         color: #777;
         transition: none;
+    }
+}
+
+/* RESPONSIVIDADE TABLET FAKES PAGE */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .texto-principal-fakes {
+        font-size: 35px;
+    }
+
+    .texto-inicial-fakes,
+    .lista-container-item,
+    .texto-secundario-fakes,
+    .container-terciario-texto,
+    .negrito-texto,
+    .texto-terciario,
+    .container4_texto {
+        font-size: 23px;
+        padding: 0;
+        margin: 1rem 2.5rem;
+    }
+
+    .lista-container-item {
+        line-height: 27px;
+        text-align: left;
+        margin: 1rem 2.5rem;
+    }
+
+    .subtitulo-destaque-fakes {
+        font-size: 33px;
+    }
+
+    .ancora-container-fakes {
+        color: #777;
+        text-decoration: underline;
+        font-size: 24px;
+    }
+
+    .container-terciario_lista-item {
+        padding: 0;
+        margin: 1rem 3rem 0;
+        text-align: left;
+    }
+
+    .container-terciario_lista-item:first-child {
+        margin-top: 2rem;
+    }
+
+    .container-terciario_lista-item:last-child {
+        margin-bottom: 2rem;
+    }
+
+    .texto-terciario {
+        margin-top: 4rem;
+        font-size: 25px;
+        text-align: left;
     }
 }
 
@@ -654,6 +820,60 @@ i {
     .ancora-secundario {
         font-size: 17px;
         color: #777;
+    }
+}
+
+/* RESPONSIVIDADE TABLET FITOTERAPICOS */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    #tratamentosAlternativos {
+        margin: 1rem 2rem 0;
+    }
+
+    .secundario {
+        padding: 0;
+    }
+
+    .secundario__texto,
+    .lista-funcoes {
+        font-size: 25px;
+    }
+
+    .ancora-secundario {
+        color: #777;
+        text-decoration: underline;
+        font-size: 26px;
+    }
+
+    .conteudo__extra {
+        font-size: 35px;
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .lista-ordenada-secundario__item {
+        font-size: 26px;
+        text-align: left;
+        padding: 0;
+        margin: 1.5rem 2.5rem;
+    }
+
+    .lista-ordenada-secundario__item .ancora-secundario,
+    .text-text-text .ancora-secundario {
+        font-weight: bold;
+    }
+
+    .lista-texto-extra,
+    .content-text {
+        font-size: 30px;
+        padding: 0;
+        margin: 2.5rem 1rem .2rem;
+    }
+
+    .text-text-text {
+        font-size: 25px;
+        padding: 0;
+        margin: 3rem 1.5rem;
+        line-height: 30px;
     }
 }
 
@@ -774,5 +994,48 @@ i {
 
     .item-redirecionamento {
         color: #006658;
+    }
+}
+
+/* RESPONSIVIDADE TABLET DA PÁGINA DE BIBLIOGRAFIA */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .principal-titulo {
+        font-size: 40px;
+    }
+
+    .titulos-referencias {
+        font-size: 30px;
+    }
+
+    .lista-referencia-item {
+        transition: 0s;
+        font-size: 22px;
+        text-align: left;
+        text-decoration: underline;
+        list-style: disc;
+        padding: 0;
+        margin: .8rem 2rem;
+        font-style: italic;
+    }
+
+    .texto-final {
+        font-size: 25px;
+        padding: 0;
+        margin: 4rem 1rem;
+        text-align: left;
+    }
+
+    .texto-final-auxilio,
+    .item-redirecionamento {
+        transition: 0s;
+        font-size: 27px;
+        font-style: italic;
+        margin: 1rem;
+    }
+
+    .item-redirecionamento {
+        margin-bottom: 3rem;
+        text-decoration: underline;
+        font-weight: bold
     }
 }
