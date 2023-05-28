@@ -218,6 +218,75 @@
     color: #4b4848;
 }
 
+/* RESPONSIVIDADE ABOUT CORONA */
+@media screen and (max-width: 500px) {
+    .sumario {
+        padding: .5rem 1.5rem;
+    }
+
+    .sumario-titulo {
+        font-size: 20px;
+    }
+
+    .sumario-topico a{
+        font-size: 15px;
+    }
+
+    .texto-principal {
+        margin: 0.5rem 1rem 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .txt-mrg {
+        margin-top: .2rem;
+    }
+
+    .texto-enunciado {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .video-principal {
+        margin: 1rem auto;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .video-principal:hover {
+        opacity: 1;
+        transition: none;
+    }
+
+    .segunda-parte {
+        margin: 1rem;
+    }
+
+    .subtitulo-artigo {
+        font-size: 25px;
+    }
+
+    .subconteudo-artigo {
+        margin: 1rem auto;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    /* REFERENCIA À BIBLIOTECA */
+
+    .remenber-of-biblioteca,
+    .ancora-remenber {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .remenber-of-biblioteca {
+        margin: 1rem;
+    }
+}
+
 /* About the Corona */
 .secundario-content {
     color: var(--preto);
@@ -226,6 +295,12 @@
     font-size: 35px;
     font-weight: 400;
     margin: 1em;
+}
+
+@media screen and (max-width: 500px) {
+    .secundario-content {
+        font-size: 16px;
+    }
 }
 
 /* Time Line Style */
@@ -255,7 +330,7 @@
     padding: .3em;
     margin: 1rem 0 .4rem;
     border-radius: 5px;
-    width: 15vw;
+    width: 50%;
 }
 
 .texto-conteudo2019 {
@@ -277,6 +352,33 @@
 
 .texto-conteudo-null {
     margin: 1em 0;
+}
+
+/* RESPONSIVIDADE TIME LINE */
+@media screen and (max-width: 500px) {
+    .introducao-texto,
+    .introducao-site {
+        font-size: 18px;
+    }
+
+    .introducao-site {
+        color: #777;
+        transition: none;
+        text-decoration: underline;
+    }
+    
+    .texto-destaque {
+        padding: .5rem 1rem;
+        width: 40%;
+    }
+
+    .texto-conteudo2019,
+    .texto-conteudo,
+    .texto-conteudo-null,
+    .texto-destaque {
+        font-size: 16px;
+        margin: .3rem 1rem;
+    }
 }
 
 /* Scails style */
@@ -312,6 +414,26 @@ ul {
 
 .secundario {
     padding: 1em 2rem 1em;
+}
+
+/* RESPONSIVIDADE SCAILS */
+@media screen and (max-width: 500px) {
+    .secundario {
+        padding: 0;
+    }
+
+    .titulo-destaque {
+        font-size: 23px;
+        margin: 1rem auto;
+    }
+
+    .lista-scal {
+        font-size: 16px;
+    }
+
+    .aside-escalas {
+        font-size: 12px;
+    }
 }
 
 /* Fakes Style */
@@ -457,6 +579,37 @@ i {
     margin: 2rem 5rem;
 }
 
+/* RESPONSIVIDADE FAKES PAGE */
+@media screen and (max-width: 500px) {
+    .texto-principal-fakes,
+    .subtitulo-destaque-fakes,
+    .subtitulo-texto-destaque,
+    .titulo-container-4 {
+        font-size: 23px;
+    }
+
+    .texto-inicial-fakes,
+    .lista-container-item,
+    .texto-secundario-fakes,
+    .container-terciario-texto,
+    .container-terciario_lista-item,
+    .negrito-texto,
+    .texto-terciario,
+    .container4_texto {
+        font-size: 16px;
+        margin: 1rem;
+        padding: 0;
+        line-height: normal;
+    }
+
+    .ancora-container-fakes,
+    .container4_texto a {
+        font-size: 17px;
+        color: #777;
+        transition: none;
+    }
+}
+
 /*Fitoterápicos Styles */
 #funcoesGerais, 
 #funcoesNervosas, 
@@ -472,6 +625,37 @@ i {
     text-align: center;
 }
 
+/* RESPONSIVIDADE FITOTERAPICS */
+@media screen and (max-width: 500px) {
+    .conteudo__extra,
+    .lista-texto-extra,
+    .content-text {
+        font-size: 23px;
+        line-height: normal;
+        padding: 0;
+        margin: .5rem;
+    }
+
+    .secundario__texto,
+    .lista-ordenada-secundario__item,
+    .lista-funcoes,
+    .text-text-text {
+        font-size: 16px;
+        padding: 0;
+        margin: .5rem 1rem;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .text-text-text {
+        text-align: center;
+    }
+
+    .ancora-secundario {
+        font-size: 17px;
+        color: #777;
+    }
+}
 
 /* Bibliografia */
 .principal-2 {
@@ -554,4 +738,41 @@ i {
 
 .item-redirecionamento:hover, .item-redirecionamento > a:hover {
     transition: .5s;
+}
+
+/* RESPONSIVIDADE BIBLIOGRAFIA */
+@media screen and (max-width: 500px) {
+    .referencias {
+        margin: 0;
+        padding: 0;
+    }
+
+    .principal-titulo,
+    .titulos-referencias {
+        font-size: 23px;
+        padding: 0;
+        margin: 1.5rem auto .7rem;
+    }
+
+    .lista-referencia-item,
+    .item-redirecionamento {
+        font-size: 17px;
+        font-style: italic;
+        text-decoration: underline;
+        padding: 0;
+        margin: .5rem;
+        text-align: left;
+    }
+
+    .texto-final,
+    .texto-final-auxilio,
+    .item-redirecionamento {
+        font-size: 16px;
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .item-redirecionamento {
+        color: #006658;
+    }
 }

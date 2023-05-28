@@ -50,7 +50,7 @@ b {
 
 .card__titulo {
     font-size: 23px;
-    padding: 1rem 1.4em 0
+    padding: 1rem 1.4em 0;
 }
 
 .card__texto {
@@ -70,40 +70,80 @@ b {
     align-self: flex-end;
 }
 
-@media screen and (max-width: 768px) {        
-    .card__ancora {
-        font-size: 18px;
-        border: 1px solid var(--vermelho);
-        background-color: var(--vermelho);
-        color: var(--branco);
-        text-decoration: none;
-        padding: 0.5em 0.3em;
-        margin-top: 1em;
-        border-radius: 5px;
-    }
+@media screen and (min-width: 1024px){
     .cards {
-      grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        padding: 0 auto;
     }
 }
-  
+
+@media screen and (max-width: 1024px) {
+    .home-title {
+        font-size: 33px;
+    }
+
+    .home-text_1 {
+        font-size: 15px;
+        margin: 0 0.2rem;
+    }
+
+    .cards {
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .card-article {
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+
+    .card-article:nth-child(1),
+    .card-article:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .card-article:nth-child(5),
+    .card-article:last-child {
+        margin-bottom: 2rem;
+    }
+
+    .card__titulo {
+        font-size: 18px;
+    }
+
+    .card__texto {
+        font-size: 15px;
+    }
+
+    .card__ancora {
+        font-size: 12px;
+    }
+
+    .card-divisao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .cards {
-      margin: .5rem;
-      padding: 0;
-      display: flex;
-      justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .card-divisao {
         display: block;
-        margin: .5rem 0;
-        padding: 0;
-        width: 40%;
+        margin: 0.5rem auto;
         text-align: center;
     }
-    
+
     .card-article {
-        margin: 0 -2rem 2rem;
+        margin: 1rem auto;
         text-align: center;
     }
 
@@ -114,14 +154,14 @@ b {
 
     .card__titulo {
         font-size: 20px;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         margin: 0;
     }
 
     .card__texto {
         font-size: 15px;
         margin: 0;
-        padding: .3rem;
+        padding: 0.3rem;
     }
 
     .card__ancora {
@@ -135,7 +175,6 @@ b {
 
     .home-text_1 {
         font-size: 16px;
-        margin: 0 .5rem;
+        margin: 0 0.5rem;
     }
 }
-  

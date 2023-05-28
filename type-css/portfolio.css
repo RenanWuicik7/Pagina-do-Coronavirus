@@ -20,7 +20,7 @@ main {
     color: #38A3A5;
 }
 
-.subtitulo-portfolio > i {
+.subtitulo-portfolio>i {
     color: #22577A;
 }
 
@@ -49,14 +49,14 @@ main {
     font-size: 20px;
 }
 
-.banner-1-port {
+.banner-1-port--desktop {
     width: 30%;
     height: auto;
     margin-right: 6rem;
     padding: 3rem;
 }
 
-.paragrafo-portfolio > b {
+.paragrafo-portfolio>b {
     color: #d0e0de;
 }
 
@@ -87,7 +87,7 @@ main {
     padding: 1rem 5rem .5rem;
 }
 
-.separation-flex > ul > li {
+.separation-flex>ul>li {
     text-align: right;
     padding-right: 4rem;
     color: aliceblue;
@@ -95,20 +95,21 @@ main {
     list-style: none;
 }
 
-.img-sec-cont-port {
+.img-sec-cont-port--desktop {
+    display: block;
     height: 40%;
     width: 30%;
     margin-top: 6rem;
     margin-right: 3rem;
 }
 
-.sec-container-port > .separation-flex > p > a {
+.sec-container-port>.separation-flex>p>a {
     transition: .5s;
     text-decoration: none;
     color: #d2fff0;
 }
 
-.sec-container-port > .separation-flex > p > a:hover {
+.sec-container-port>.separation-flex>p>a:hover {
     transition: .5s;
     color: #128d7d;
     text-decoration: underline;
@@ -126,7 +127,8 @@ main {
     padding: 1rem 5rem .5rem;
 }
 
-.th-img-flx {
+.th-img-flx--desktop {
+    display: block;
     height: 40%;
     width: 30%;
     padding: 3rem 2rem 0;
@@ -170,12 +172,12 @@ body {
     background-color: #9dfce76e;
 }
 
-.port-botao > a {
+.port-botao>a {
     text-decoration: none;
     color: #4E9F3D;
 }
 
-.port-botao > a:hover {
+.port-botao>a:hover {
     color: #76df61;
 }
 
@@ -185,11 +187,11 @@ body {
     background-color: #368b24;
 }
 
-footer > section {
+footer>section {
     text-align: center;
 }
 
-footer > section > .port-botao {
+footer>section>.port-botao {
     margin-bottom: 1rem;
 }
 
@@ -198,4 +200,107 @@ footer > section > .port-botao {
     font-size: 24px;
     color: #090A09;
     font-family: 'Roboto', sans-serif;
+}
+
+.banner-1-port--mobile,
+.img-sec-cont-port--mobile,
+.th-img-flx--mobile {
+    display: none;
+}
+
+/* RESPONSIVIDADE ABOUT ME PAGE */
+@media screen and (max-width: 500px) {
+    .titulo-portfolio {
+        font-size: 30px;
+    }
+
+    .subtitulo-portfolio,
+    .inicio-portifolio,
+    .inicio-titulo {
+        font-size: 25px;
+    }
+
+    .container-port {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .separation-flex,
+    .sec-container-port,
+    .third-cont-flex {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    .inicio-titulo,
+    .titulo-2,
+    .titulo-t-con-flex,
+    .port-titulo-rodape {
+        font-size: 23px;
+        padding: 0;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .paragrafo-portfolio,
+    .port-texto-rodape,
+    .texto-copyright {
+        font-size: 16px;
+        padding: 0;
+        margin: .5rem 1rem;
+    }
+
+    .banner-1-port--desktop,
+    .img-sec-cont-port--desktop,
+    .th-img-flx--desktop {
+        display: none;
+    }
+
+    .banner-1-port--mobile,
+    .img-sec-cont-port--mobile,
+    .th-img-flx--mobile {
+        display: block;
+        margin: 1rem auto;
+        border-radius: 20px;
+        width: 50%;
+    }
+
+    .img-sec-cont-port--mobile,
+    .th-img-flx--mobile {
+        width: 90%;
+    }
+
+    .subtópico-portfolio {
+        font-size: 20px;
+        padding: 0;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .separation-flex ul li {
+        font-size: 14px;
+        padding: 0;
+        margin: .2rem;
+        color: #bdffe9;
+    }
+
+    .port-botao {
+        margin: .2rem;
+        padding: .2rem .4rem;
+    }
+
+    footer>section>.port-botao {
+        margin-bottom: .3rem;
+    }
+
+    .port-botao:hover {
+        transition: 0s;
+        padding: .2rem .4rem;
+        background-color: #9dfce76e;
+    }
 }

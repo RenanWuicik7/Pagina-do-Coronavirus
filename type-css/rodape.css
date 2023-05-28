@@ -41,6 +41,24 @@
     transition: .3s;
 }
 
+@media screen and (max-width: 1024px) {
+    .rodape {
+        padding: 0;
+    }
+
+    .rodape-texto {
+        font-size: 20px;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .rodape-texto-contato {
+        font-size: 23px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .rodape-texto {
         font-size: 15px;
@@ -53,7 +71,7 @@
     }
 
     .rodape-imagem {
-        width: 50%;
+        width: 90%;
     }
 
     .rodape {

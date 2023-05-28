@@ -13,6 +13,7 @@
     --libre-baskerville:'Libre Baskerville', serif;
     --kanit: 'Kanit', sans-serif;
     --red-hat-display: 'Red Hat Display', sans-serif;
+    --inter: 'Inter', sans-serif;
 
     /* Colors */
     --preto: #000000;
@@ -21,4 +22,9 @@
     --cinza-escurinho: #8C8888;
     --cinza-clarinho: #C4C4C4;
     --fundo-menu: #fffae0ea;
+}
+
+body {
+    font-size: 20px;
+    font-family: var(--inter);
 }

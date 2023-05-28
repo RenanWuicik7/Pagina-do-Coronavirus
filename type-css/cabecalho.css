@@ -57,13 +57,37 @@ header {
     color: var(--preto);
 }
 
-.menu-navegacao__input:checked ~ .menu-navegacao__label > .menu-navegacao_hamburguer {
-    background-image: url(../assets/Menu\ Aberto.png);
-    padding: 0.5em;
-    background-color: #00ffff5d;
+@media screen and (min-width: 500px) {
+    .menu-navegacao__input:checked~
+    .menu-navegacao__label>
+    .menu-navegacao_hamburguer {
+        background-image: url(../assets/Menu\ Aberto.png);
+        padding: 0.5em;
+        background-color: #00ffff28;
+        margin-bottom: 0;
+    }
 }
 
-.menu-navegacao__input:checked ~ .lista-navegacao {
+@media screen and (max-width: 500px) {
+    .menu-navegacao__input:checked~
+    .menu-navegacao__label {
+        padding: .5rem;
+        background-color: #00ffff28;
+        margin-bottom: 0;
+    }
+}
+
+
+.menu-navegacao__label {
+    display: flex;
+    align-items: center;
+}
+
+.menu-menu {
+    padding-left: .3rem;
+}
+
+.menu-navegacao__input:checked~.lista-navegacao {
     display: inline-block;
 }
 
@@ -89,7 +113,8 @@ header {
 
 @media screen and (max-width: 500px) {
     .paginas-extras {
-        display: flex;
+        display: block;
+        width: auto;
     }
 
     .extras-link {
@@ -97,11 +122,7 @@ header {
         padding: 0.3rem;
     }
 
-    .menu-imagem__logo {
-        width: 50%;
-    }
-
-    .menu-navegacao__input:checked ~ .lista-navegacao {
-        width: 50%;
+    .menu-navegacao__input:checked~.lista-navegacao {
+        width: 90%;
     }
 }
